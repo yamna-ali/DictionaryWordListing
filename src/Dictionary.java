@@ -49,9 +49,24 @@ public static void main(String[] args){
     + "\nTo print in upper case press 3 "+ "\nTo print out the words that starts with vowel press 4: "+ "\nTo replace all the vowels with a press 5: ");
    choice=scanner.nextInt();
    if( choice ==1){
+
+/*
+       for (int i = 1; i< dictionary.size(); i++){
+          for (int j = dictionary.size() - 1; j > i; j--) {
+              String tempI= dictionary.get(i);
+            String tempJ= dictionary.get(j);
+
+              if(tempI.matches(tempJ)) {
+                   dictionary.set(i, tempJ);
+                   dictionary.set(j, tempI);
+               }}}
+   System.out.println(dictionary + " ");}
+
+ */
+
     Collections.sort(dictionary);
-    System.out.println("Words printed out in acsending order");
-    System.out.println(dictionary+ "\n");}
+   System.out.println("Words printed out in acsending order");
+    System.out.print(dictionary+ "\n");}
    else if(choice==2){
     Collections.reverse(dictionary);
     System.out.println("Words are prined out in desceneding order");
